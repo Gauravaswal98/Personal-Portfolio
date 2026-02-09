@@ -4,12 +4,6 @@ A modern personal portfolio website showcasing my frontend projects, dashboards,
 
 ---
 
-## 🚀 Live Preview
-👉 *(Add your live portfolio link here)*  
-Example: https://your-portfolio-link.com
-
----
-
 ## 📌 About the Project
 
 This portfolio is designed to present my work, skills, and projects in a clear and professional manner. It includes project cards, GitHub integration, and a responsive layout to ensure a smooth user experience across all devices.
