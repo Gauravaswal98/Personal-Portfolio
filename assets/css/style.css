@@ -212,10 +212,8 @@ section .title::after {
 
 /* Dark overlay for readability */
 .home::before {
-    content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.55);
     z-index: -1;
 }
 
@@ -881,4 +879,183 @@ footer span a:hover {
 
 .icons .row a:hover {
     text-decoration: none;
+}
+
+/* ===============================
+   GLOBAL RESPONSIVE FIXES
+================================ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+    overflow-x: hidden;
+}
+
+/* Better container behavior for large screens */
+.max-width {
+    width: 100%;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+
+@media (max-width: 768px) {
+    .home {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 80px;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 24px;
+    }
+
+    .home .home-content a {
+        font-size: 18px;
+        padding: 10px 22px;
+    }
+}
+
+/* ===============================
+   ABOUT SECTION
+================================ */
+
+@media (max-width: 991px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+    }
+
+    .about .about-content .left img {
+        width: 280px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/* ===============================
+   SERVICES CAROUSEL FIX
+================================ */
+
+@media (max-width: 768px) {
+
+    .services .item,
+    .services .item.active {
+        width: 90vw !important;
+        height: 320px;
+        margin: 0 auto 30px;
+    }
+
+    .services .item-desc {
+        transform: translateY(0);
+    }
+
+    .services .item-desc p {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ===============================
+   PROJECTS / TEAMS SECTION
+================================ */
+
+.card {
+    min-height: 100%;
+}
+
+.card .box {
+    height: 100%;
+}
+
+/* Owl cards spacing fix on mobile */
+@media (max-width: 600px) {
+    .teams .carousel .card {
+        padding: 20px;
+    }
+}
+
+/* ===============================
+   SKILLS SECTION
+================================ */
+
+@media (max-width: 991px) {
+    .skills .skills-content {
+        flex-direction: column;
+    }
+
+    .skills .skills-content .column {
+        width: 100%;
+    }
+}
+
+/* ===============================
+   CONTACT SECTION
+================================ */
+
+@media (max-width: 991px) {
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email {
+        margin-right: 0;
+    }
+
+    .right form .button-area button {
+        width: 100% !important;
+    }
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    font-size: 14px;
+    padding: 20px 10px;
+}
+
+/* ===============================
+   ULTRA WIDE SCREENS (4K+)
+================================ */
+
+@media (min-width: 1800px) {
+    .max-width {
+        max-width: 1800px;
+    }
+
+    section .title {
+        font-size: 48px;
+    }
 }
