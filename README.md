@@ -10,6 +10,15 @@ This portfolio is designed to present my work, skills, and projects in a clear a
 
 ---
 
+## 🌐 Live Demo
+
+Experience the live version of this portfolio website and explore the projects,
+design, and overall user interface in real time.
+
+👉 **Live Website:** https://gauravaswal98.github.io/Personal-Portfolio/
+
+---
+
 ## ✨ Features
 
 - Responsive and modern UI design  
